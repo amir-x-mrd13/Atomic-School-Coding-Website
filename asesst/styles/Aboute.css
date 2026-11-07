@@ -1,0 +1,37 @@
+
+
+.abouteWe-box {
+    width: 90%;
+    direction: rtl;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .abouteWe-title {
+        border-bottom: solid white 1px;
+        padding-bottom: 20px;
+
+    }
+
+    .abouteWe-text {
+        padding-top: 20px;
+    }
+
+    .aboute-btn {
+        background: #57a1f5;
+        box-shadow: 0 1px 8px #57a1f5;
+        border-radius: 6px;
+        padding: 10px 30px;
+        border: none;
+        transition: transform 0.3s;
+        color: white;
+        margin-top: 30px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.96);
+        }
+    }
+}
