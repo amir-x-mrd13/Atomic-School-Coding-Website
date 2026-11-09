@@ -27,3 +27,9 @@ drop policy if exists "public submissions access" on public.submissions;
 create policy "public submissions access" on public.submissions for all to anon, authenticated using (true) with check (true);
 grant usage on schema public to anon, authenticated;
 grant select, insert, update, delete on public.lessons, public.tasks, public.submissions to anon, authenticated;
+
+
+-- ستون‌های تکمیلی برای لینک آپارات و نمره؛ اجرای مجدد این دستورات بی‌خطر است.
+alter table public.tasks add column if not exists aparat_url text;
+alter table public.submissions add column if not exists aparat_url text;
+alter table public.submissions add column if not exists grade numeric(5,2);

@@ -25,6 +25,7 @@
       <section id="taskTab" class="panel tab-panel" hidden><h2>ساخت تکلیف جدید</h2><form id="taskForm" class="stack">
         <label for="taskTitle">عنوان تکلیف</label><input id="taskTitle" required placeholder="مثلاً کد آب‌وهوا">
         <label for="taskDescription">شرح تکلیف</label><textarea id="taskDescription" rows="4" required placeholder="دانش‌آموز باید چه کاری انجام دهد؟"></textarea>
+
         <button class="btn primary">انتشار تکلیف</button></form><div id="taskAdminList" class="admin-list"></div>
       </section>
       <section id="submissionsTab" class="panel tab-panel" hidden><h2>ارسال‌های دانش‌آموزان</h2><p class="muted">ارسال‌ها به ترتیب زمان ثبت نمایش داده می‌شوند.</p><div id="submissionList" class="submission-list"></div></section>
@@ -33,8 +34,8 @@
   </main>
   <dialog id="reviewDialog" class="dialog"><form id="reviewForm" class="stack">
     <button type="button" class="dialog-close" id="closeReview" aria-label="بستن">×</button><div class="eyebrow">بررسی تکلیف</div><h2 id="reviewHeading"></h2><pre id="reviewCode" class="code-preview"></pre>
-    <label for="reviewStatus">نتیجه بررسی</label><select id="reviewStatus"><option value="pending">در انتظار بررسی</option><option value="approved">تأیید شد</option><option value="revision">نیاز به اصلاح دارد</option></select>
-    <label for="reviewNote">یادداشت استاد</label><textarea id="reviewNote" rows="3" placeholder="بازخورد برای دانش‌آموز"></textarea><button class="btn primary">ذخیره نتیجه</button>
+    <label for="reviewGrade">نمره از ۲۰ (اختیاری)</label><input id="reviewGrade" type="number" min="0" max="20" step="0.25" placeholder="مثلاً ۱۸٫۵">
+    <label for="reviewNote">توضیحات معلم (اختیاری)</label><textarea id="reviewNote" rows="3" placeholder="توضیحات یا بازخورد برای دانش‌آموز"></textarea><button class="btn primary">ذخیره نتیجه</button>
   </form></dialog>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="./supabase-config.js"></script>

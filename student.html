@@ -24,6 +24,7 @@
       </section>
       <section class="section"><div class="section-heading"><div><h2>کدهای آموزشی</h2><p class="muted">برای دیدن کد یا دانلود نسخه متنی، یکی را انتخاب کن.</p></div></div><div id="lessons" class="cards"></div></section>
       <section class="section"><div class="section-heading"><div><h2>تکالیف من</h2><p class="muted">تکلیف را انتخاب کن، کدت را بنویس و ارسال کن.</p></div></div><div id="tasks" class="task-list"></div></section>
+      <section class="section"><div class="section-heading"><div><h2>نتیجه تکالیف</h2><p class="muted">نمره و توضیحات معلم پس از بررسی اینجا نمایش داده می‌شود.</p></div></div><div id="studentResults" class="task-list"></div></section>
     </div>
     <div id="notice" class="notice" role="status" hidden></div>
     <footer>نمونه اولیه سایت آموزشی · اطلاعات این نسخه در همین مرورگر ذخیره می‌شود.</footer>
@@ -32,6 +33,7 @@
     <button type="button" class="dialog-close" id="closeDialog" aria-label="بستن">×</button>
     <div class="eyebrow">ارسال تکلیف</div><h2 id="dialogTitle">عنوان تکلیف</h2><p id="dialogDescription" class="muted"></p>
     <label for="studentCode">کد پایتون خودت را اینجا بنویس</label><textarea id="studentCode" rows="12" required spellcheck="false" placeholder="# کد خود را اینجا بنویس"></textarea>
+
     <button class="btn primary">ارسال برای استاد</button>
   </form></dialog>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
